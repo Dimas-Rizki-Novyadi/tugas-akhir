@@ -1,0 +1,51 @@
+<h1 mat-dialog-title><b>Address Detail</b></h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Ex. Dimas Rizki Novyadi" [(ngModel)]="data.name">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Location</mat-label>
+        <input matInput placeholder="Ex. Jalan Merdeka III" [(ngModel)]="data.location">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>RT</mat-label>
+        <input matInput placeholder="RT Number" [(ngModel)]="data.rt">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>RW</mat-label>
+        <input matInput placeholder="RW Number" [(ngModel)]="data.rw">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Sub-District/Village</mat-label>
+        <input matInput placeholder="Ex. Andong" [(ngModel)]="data.village">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>District/City</mat-label>
+        <input matInput placeholder="Ex. New York" [(ngModel)]="data.district">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Province</mat-label>
+        <input matInput placeholder="Ex. East Java" [(ngModel)]="data.province">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Zip Code</mat-label>
+        <input matInput type="number" placeholder="Postal Code" [(ngModel)]="data.zip">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Country</mat-label>
+        <input matInput placeholder="Ex. United Kingdom" [(ngModel)]="data.country">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Phone Number</mat-label>
+        <input matInput placeholder="Ex. 1234567890" [(ngModel)]="data.phone">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Ex. email@domain.com" [(ngModel)]="data.email">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions align="end">
+    <button mat-raised-button mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary" (click)="saveData()" [disabled]="loading">{{loading ? 'Saving..':'Save'}}</button>
+</div>

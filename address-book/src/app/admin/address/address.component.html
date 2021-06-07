@@ -1,0 +1,51 @@
+<div *ngIf="loading" style="height: 300px;" class="uk-flex uk-flex-center uk-flex-middle">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+<mat-card *ngIf="!loading">
+    <mat-card-header>
+        <mat-card-title class="title uk-margin-medium-top">{{title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="uk-flex">
+            <span class="uk-width-expand"></span>
+            <button mat-flat-button color="primary" (click)="addressDetail({},-1)"><mat-icon>add</mat-icon>Create Address</button>
+        </div>
+        <table class="uk-table uk-table-middle uk-table-divider">
+            <thead>
+                <th align="center"></th>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>RT</th>
+                <th>RW</th>
+                <th>Sub-District / Village</th>
+                <th>District / City</th>
+                <th>Province</th>
+                <th>Zip Code</th>
+                <th>Country</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let addressdata of addresslist; let idx=index">
+                    <td align="center">
+                        <button mat-button color="primary" (click)="addressDetail(addressdata,idx)"><mat-icon>edit</mat-icon></button>
+                        <button mat-button color="warn" (click)="deleteAddress(addressdata.id,idx)" [disabled]="loadingDelete[idx]"><mat-icon>delete</mat-icon>{{loadingDelete[idx] ? 'Deleting..':'Delete'}}</button>
+                    </td>
+                    <td>{{idx+1}}</td>
+                    <td>{{addressdata.name}}</td>
+                    <td>{{addressdata.location}}</td>
+                    <td>{{addressdata.rt}}</td>
+                    <td>{{addressdata.rw}}</td>
+                    <td>{{addressdata.village}}</td>
+                    <td>{{addressdata.district}}</td>
+                    <td>{{addressdata.province}}</td>
+                    <td>{{addressdata.zip}}</td>
+                    <td>{{addressdata.country}}</td>
+                    <td>{{addressdata.phone}}</td>
+                    <td>{{addressdata.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-card-content>
+</mat-card>
