@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
   loading: boolean | undefined;
   register(user: any) {
     this.loading = true;
-    this.auth.createUserWithEmailAndPassword(user.email, user.password).then(res => {
+    this.auth.createUserWithEmailAndPassword(this.user.email, this.user.password).then(res => {
       this.loading = false;
       alert('Register successfully!');
       this.router.navigate(['/login']);

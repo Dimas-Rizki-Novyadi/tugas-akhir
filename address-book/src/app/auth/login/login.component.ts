@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   email = new FormControl('', [Validators.required, Validators.email]);
   password = new FormControl('', [Validators.required]);
   login(user: any) {
-    this.auth.signInWithEmailAndPassword(user.email, user.password).then(res => {
+    this.auth.signInWithEmailAndPassword(this.user.email, this.user.password).then(res => {
       this.router.navigate(['admin/dashboard']);
     }).catch(err => {
       alert('Cannot login');
