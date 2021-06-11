@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "address-book-ee657": {
+      "hosting": {
+        "address-book": [
+          "address-book-ee657"
+        ]
+      }
+    }
+  }
+}
