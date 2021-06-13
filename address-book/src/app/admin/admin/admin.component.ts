@@ -28,7 +28,7 @@ export class AdminComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.checkLogin();
+    //this.checkLogin();
   }
 
   checkLogin() {
