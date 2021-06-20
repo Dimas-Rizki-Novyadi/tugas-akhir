@@ -25,6 +25,10 @@ const routes: Routes = [
         component:AddressComponent
       },
       {
+        path:'about',
+        component:AboutComponent
+      },
+      {
         path:'',
         redirectTo:'/admin/dashboard',
         pathMatch:'full'
