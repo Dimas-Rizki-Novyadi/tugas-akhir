@@ -9,6 +9,7 @@ import { AddressDetailComponent } from './address-detail/address-detail.componen
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UploadComponent } from './upload/upload.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
@@ -38,7 +39,8 @@ const routes: Routes = [
     DashboardComponent,
     AddressComponent,
     AddressDetailComponent,
-    UploadComponent
+    UploadComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,
