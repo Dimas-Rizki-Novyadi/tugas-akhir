@@ -6,13 +6,24 @@ h1 {
 p {
     color: aliceblue;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style:oblique;
+    font-style: oblique;
 }
-.info {
+.info1 {
     color: blue;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.info2 {
+    color: blue;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h3 {
     color:blue;
     font-size: 30px;
     font-family:'Times New Roman', Times, serif;
+}
+.example-card {
+    max-width: 500px;
+    max-height: 290px;
 }
