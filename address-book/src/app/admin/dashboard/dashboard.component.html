@@ -1,4 +1,4 @@
-<div class="uk-background-blend-multiply uk-background-secondary uk-background-top-center uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(assets/address-book.jpg);">
+<div class="uk-background-blend-multiply uk-background-secondary uk-background-top-center uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle uk-animation-toggle uk-animation-slide-top" style="background-image: url(assets/address-book.jpg);" tabindex="0">
     <article class="uk-article">
         <h1 class="uk-article-title uk-flex uk-flex-center">Welcome To The Address Book</h1>
         <hr class="uk-divider-icon">
@@ -8,14 +8,14 @@
 <hr class="uk-divider-icon">
 <div>
     <mat-grid-list cols="2" rowHeight="2:1">
-        <mat-grid-tile>
+        <mat-grid-tile class="uk-animation-toggle uk-animation-slide-left" tabindex="0">
             <mat-card class="example-card">
                     <div class="uk-card-header uk-text-center"><h3><b>Address List</b></h3></div>
                     <div class="uk-card-body uk-text-justify"><p class="info1">In this section you can collect data related to location and address data belonging to the closest people or other important people.</p></div>
                     <div class="uk-card-footer"><button mat-raised-button color="primary" routerLink="/admin/address">GO TO</button></div>
             </mat-card>
         </mat-grid-tile>
-        <mat-grid-tile>
+        <mat-grid-tile class="uk-animation-toggle uk-animation-slide-right" tabindex="0">
             <mat-card class="example-card">
                     <div class="uk-card-header uk-text-center"><h3><b>About App</b></h3></div>
                     <div class="uk-card-body uk-text-justify"><p class="info2">In this section you can get overall information regarding the type, date created, date of publication, name of the author and tools or frameworks that support the creation of this web application.</p></div>

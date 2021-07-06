@@ -16,16 +16,20 @@ export class LoginComponent implements OnInit {
     public router: Router,
     public auth: AngularFireAuth
   ) { }
-
+  
   ngOnInit(): void {
   }
+  loading: boolean | undefined;
   hide: boolean = true;
   email = new FormControl('', [Validators.required, Validators.email]);
   password = new FormControl('', [Validators.required]);
   login(user: any) {
+    this.loading = true;
     this.auth.signInWithEmailAndPassword(this.user.email, this.user.password).then(res => {
       this.router.navigate(['admin/dashboard']);
+      this.loading = false;
     }).catch(err => {
+      this.loading = false;
       alert('Cannot login');
     })
   }

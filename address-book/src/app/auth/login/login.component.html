@@ -21,7 +21,7 @@
           <button mat-button routerLink="/forgot">Forgot</button>
         </div>
         <button mat-raised-button routerLink="/public/home">BACK</button>
-        <button mat-raised-button color="primary" (click)="login(user)">LOGIN</button>
+        <button mat-raised-button color="primary" (click)="login(user)" [disabled]="loading">{{loading ? 'Login..':'LOGIN'}}</button>
       </div>
     </mat-card-content>
   </mat-card>

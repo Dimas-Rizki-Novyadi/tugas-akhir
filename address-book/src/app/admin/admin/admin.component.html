@@ -2,14 +2,14 @@
     <!--toolbar-->
     <mat-toolbar color="primary" class="example-header">
         <button mat-icon-button (click)="sidenav.toggle()">
-            <mat-icon>menu</mat-icon>
+            <mat-icon class="uk-animation-toggle uk-animation-slide-left">menu</mat-icon>
         </button>
-        <span>ADDRESS BOOK</span>
+        <span class="uk-animation-toggle uk-animation-slide-left">ADDRESS BOOK</span>
         <span class="spacer"></span>
     </mat-toolbar>
     <!--end toolbar-->
     <mat-sidenav-container class="example-container">
-        <mat-sidenav #sidenav mode="side" [position]="'start'" [opened]="false" class="sidenav-left" [fixedInViewport]="true" [fixedTopGap]="70" [fixedBottomGap]="0">
+        <mat-sidenav #sidenav mode="over" [position]="'start'" [opened]="false" class="sidenav-left" [fixedInViewport]="true" [fixedTopGap]="65" [fixedBottomGap]="0">
             <mat-nav-list>
                 <mat-list-item routerLink="/admin/dashboard">
                     <mat-icon matListIcon>dashboard</mat-icon>
@@ -29,7 +29,7 @@
                 </mat-list-item>
             </mat-nav-list>
         </mat-sidenav>
-        <mat-sidenav #sidenav mode="side" [position]="'end'" class="example-sidenav" [fixedInViewport]="true"
+        <mat-sidenav #sidenav mode="over" [position]="'end'" class="example-sidenav" [fixedInViewport]="true"
             [fixedTopGap]="60" [fixedBottomGap]="0">
         </mat-sidenav>
         <!--sidenav content-->
