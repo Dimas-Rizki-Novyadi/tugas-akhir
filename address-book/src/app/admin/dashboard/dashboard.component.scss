@@ -9,21 +9,27 @@ p {
     font-style: oblique;
 }
 .info1 {
-    color: blue;
+    color: rgb(193, 193, 255);
     font-size: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .info2 {
-    color: blue;
+    color: rgb(193, 193, 255);
     font-size: 16px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h3 {
-    color:blue;
+    color:honeydew;
     font-size: 30px;
     font-family:'Times New Roman', Times, serif;
 }
-.example-card {
+.example-card-1 {
     max-width: 500px;
     max-height: 290px;
+    background-color: cadetblue;
+}
+.example-card-2 {
+    max-width: 500px;
+    max-height: 290px;
+    background-color:cornflowerblue;
 }
