@@ -47,6 +47,9 @@ export class ApiService {
   register(email: any, password: any) {
     return this.http.post(this.serverUrl + 'auth/register', { email: email, password: password });
   }
+  forgot(email: any) {
+    return this.http.post(this.serverUrl + 'auth/forgot', { email: email});
+  }
   upload(file: any) {
     return this.http.post(this.serverUrl + 'upload/addressdata', file);
   }

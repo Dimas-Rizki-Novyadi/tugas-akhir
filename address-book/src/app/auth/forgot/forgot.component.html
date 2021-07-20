@@ -6,14 +6,14 @@
         <mat-card-content>
             <mat-form-field class="uk-width-1-1">
                 <mat-label>Email</mat-label>
-                <input matInput placeholder="Ex. email@domain.com">
+                <input matInput placeholder="Ex. email@domain.com" [(ngModel)]="user.email" required>
             </mat-form-field>
             <div class="uk-flex uk-flex-right">
                 <div class="uk-width-expand">
                     <button mat-button routerLink="/register">Create Account</button>
                     <button mat-button routerLink="/login">I have an account</button>
                 </div>
-                <button mat-raised-button color="primary">SEND</button>
+                <button mat-raised-button color="primary" (click)="forgot(user)" [disabled]="loading">{{loading ? 'Sending..':'SEND'}}</button>
             </div>
         </mat-card-content>
     </mat-card>
