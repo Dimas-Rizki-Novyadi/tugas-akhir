@@ -30,11 +30,11 @@ export class ForgotComponent implements OnInit {
     this.loading = true;
     this.auth.sendPasswordResetEmail(this.user.email).then(res => {
       this.loading = false;
-      alert('Reset password successfully!');
+      alert('Password reset confirmation was sent successfully!. Please check your email.');
       this.router.navigate(['/login']);
     }).catch(err => {
       this.loading = false;
-      alert('Cannot reset');
+      alert('Password reset confirmation failed to send. Please try again.');
     });
   }
 

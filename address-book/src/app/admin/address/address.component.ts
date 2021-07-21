@@ -26,7 +26,7 @@ export class AddressComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.title = 'Address Data';
+    this.title = 'Address List';
     this.auth.user.subscribe(user => {
       this.userData = user;
       this.getAddress();
