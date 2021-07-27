@@ -33,3 +33,23 @@ h3 {
     max-height: 290px;
     background-color:cornflowerblue;
 }
+[class*="example-card-"] {
+    width: 100%;
+}
+.row::after {
+    content: "";
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 25px;
+}
+.col-2 {float: right;}
+.col-1 {float: left;}
+.aside {
+    padding: 15px;
+    text-align: center;
+}
+.header {
+    padding: 30px;
+}
