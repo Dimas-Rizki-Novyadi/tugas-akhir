@@ -24,17 +24,18 @@ h3 {
     font-family:'Times New Roman', Times, serif;
 }
 .example-card-1 {
-    max-width: 500px;
-    max-height: 290px;
+    max-width: 520px;
+    min-height: 290px;
     background-color: cadetblue;
 }
 .example-card-2 {
-    max-width: 500px;
-    max-height: 290px;
+    max-width: 520px;
+    min-height: 290px;
     background-color:cornflowerblue;
 }
 [class*="example-card-"] {
     width: 100%;
+    height: 100%;
 }
 .row::after {
     content: "";

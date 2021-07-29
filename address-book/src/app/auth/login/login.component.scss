@@ -2,3 +2,7 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: blue;
 }
+.try::after {
+    content: "";
+    display: table;
+}

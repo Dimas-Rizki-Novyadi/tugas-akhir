@@ -31,11 +31,8 @@
         <mat-sidenav #sidenav mode="over" [position]="'end'" class="example-sidenav" [fixedInViewport]="true"
             [fixedTopGap]="60" [fixedBottomGap]="0">
         </mat-sidenav>
-        <!--sidenav content-->
-        <mat-sidenav-content style="padding: 20px; background-color: #ccc;">
-            <!--halaman-halaman tampil disini-->
+        <mat-sidenav-content style="padding: 20px; background-image: url(assets/write.jpg);">
             <router-outlet [@flyInOut]="false"></router-outlet>
         </mat-sidenav-content>
-        <!--end sidenav content-->
     </mat-sidenav-container>
 </ng-container>

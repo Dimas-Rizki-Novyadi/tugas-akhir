@@ -45,6 +45,7 @@ export class AdminComponent implements OnInit {
       localStorage.removeItem('appToken');
       window.location.reload();
     }
+    this.router.navigate(['/login']);
   }
 
   menu = [
