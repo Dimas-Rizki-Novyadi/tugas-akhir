@@ -10,15 +10,15 @@
     <mat-sidenav-container class="example-container">
         <mat-sidenav #sidenav mode="over" [position]="'start'" [opened]="false" class="sidenav-left" [fixedInViewport]="true" [fixedTopGap]="65" [fixedBottomGap]="0">
             <mat-nav-list>
-                <mat-list-item routerLink="/admin/dashboard">
+                <mat-list-item routerLink="/admin/dashboard" (click)="sidenav.toggle()">
                     <mat-icon matListIcon>dashboard</mat-icon>
                     <h3 matLine>Dashboard</h3>
                 </mat-list-item>
-                <mat-list-item routerLink="/admin/address">
+                <mat-list-item routerLink="/admin/address" (click)="sidenav.toggle()">
                     <mat-icon matListIcon>book</mat-icon>
                     <h3 matLine>Address List</h3>
                 </mat-list-item>
-                <mat-list-item routerLink="/admin/about">
+                <mat-list-item routerLink="/admin/about" (click)="sidenav.toggle()">
                     <mat-icon matListIcon>info</mat-icon>
                     <h3 matLine>About App</h3>
                 </mat-list-item>
