@@ -4,5 +4,6 @@ h1 {
 }
 .try::after {
     content: "";
+    clear: both;
     display: table;
 }
